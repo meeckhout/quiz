@@ -10,17 +10,17 @@ class Word
     public string $french;
     public string $translation;
 
-    // TODO: add word (FR) and answer (EN) - (via constructor or not? why?)
-    public function __construct()
+    public function __construct(string $french, string $translation)
     {
-//        this->french = $french;
-//        this->translation = $translation;
+        $this->french = $french;
+        $this->translation = $translation;
     }
 
-    public function verify(string $answer): bool
+    public function verify(): ?string
     {
-        // TODO: use this function to verify if the provided answer by the user matches the correct one
-        // Bonus: allow answers with different casing (example: both bread or Bread can be correct answers, even though technically it's a different string)
-        // Bonus (hard): can you allow answers with small typo's (max one character different)?
+        if($_POST['guess'] === $this->translation) {
+            return "success";
+        }
+        return null;
     }
 }

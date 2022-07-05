@@ -10,5 +10,13 @@
 <body>
 <!-- TODO: add a form for the user to play the game -->
 
+<h1><?php ?></h1>
+    <form>
+        <label>
+            <input type="text">
+        </label>
+        <button type="submit" name="submit" value="submit">Submit</button>
+        <button type="submit" name="startOver" value="startOver">Try again</button>
+    </form>
 </body>
 </html>
