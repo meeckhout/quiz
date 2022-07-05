@@ -18,6 +18,18 @@ require_once 'Model/Word.php';
 // Start the game
 // Don't change anything in this file
 // The LanguageGame class will be your starting point
+
+
+//function whatIsHappening() {
+//    echo '<h2>$_POST</h2>';
+//    var_dump($_POST);
+//    echo '<br>';
+//    echo '<h2>$_SESSION</h2>';
+//    var_dump($_SESSION);
+//}
+//
+//whatIsHappening();
+
 $game = new LanguageGame();
 $game->run();
 

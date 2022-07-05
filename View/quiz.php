@@ -13,10 +13,10 @@
 <h1><?php ?></h1>
     <form>
         <label>
-            <input type="text">
+            <input type="text" name="guess">
         </label>
-        <button type="submit" name="submit" value="submit">Submit</button>
-        <button type="submit" name="startOver" value="startOver">Try again</button>
+        <button type="submit" value="submit">Submit</button>
+        <button type="submit" value="startOver">Try again</button>
     </form>
 </body>
 </html>

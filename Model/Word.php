@@ -16,11 +16,11 @@ class Word
         $this->translation = $translation;
     }
 
-    public function verify(): ?string
+    public function verify(): string
     {
         if($_POST['guess'] === $this->translation) {
             return "success";
         }
-        return null;
+        return "failure";
     }
 }
