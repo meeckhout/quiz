@@ -26,11 +26,11 @@ class LanguageGame
             $this->setupGame();
         }
 
-        if(!empty(($_POST['submit'] === "submit"))) {
+        if(!empty($_POST['submit'])) {
             $this->guessIsSubmitted();
         }
 
-        if(!empty(($_POST['submit'] === "startOver"))) {
+        if(!empty($_POST['startOver'])) {
             $this->setupGame();
         }
     }
@@ -48,6 +48,7 @@ class LanguageGame
 
     public function guessIsSubmitted() : void
     {
+        echo "test";
         $this->selectedWord = unserialize($_SESSION['selectedWord'], 1);
         var_dump($this->selectedWord);
 
