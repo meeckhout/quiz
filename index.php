@@ -2,6 +2,7 @@
 
 // Require the correct variable type to be used (no auto-converting)
 declare(strict_types = 1);
+session_start();
 
 // Show errors so we get helpful information
 ini_set('display_errors', '1');
@@ -17,7 +18,7 @@ require_once 'Model/Word.php';
 // Start the game
 // Don't change anything in this file
 // The LanguageGame class will be your starting point
-//$game = new LanguageGame();
-//$game->run();
+$game = new LanguageGame();
+$game->run();
 
-require 'view/view.php';
+require 'view/quiz.php';
