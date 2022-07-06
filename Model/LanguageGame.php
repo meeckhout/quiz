@@ -1,65 +1,55 @@
 <?php
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
 class LanguageGame
 {
     private array $words;
     public Word $selectedWord;
     public string $message;
 
-//    $selectedWord->french;
-//    $selectedWord->translation;
-
     public function __construct()
     {
+        // :: is used for static functions
+        // They can be called without an instance of that class being created
+        // and are used mostly for more *static* types of data (a fixed set of translations in this case)
         foreach (Data::words() as $frenchTranslation => $englishTranslation) {
             $this->words[] = new Word($frenchTranslation, $englishTranslation);
+            // TODO: create instances of the Word class to be added to the words array
         }
+        $this->selectedWord = new Word("", "");
     }
 
     public function run(): void
     {
-        if(!isset($_POST['submit'])) {
+        if (!isset($_POST['submit'])) {
             $this->setupGame();
         }
 
-        if(!empty($_POST['submit'])) {
+        if (!empty($_POST['text']) && $_POST['submit'] === 'go') {
             $this->guessIsSubmitted();
         }
 
-        if(!empty($_POST['startOver'])) {
+        if (!empty($_POST['startOver'])) {
             $this->setupGame();
         }
+
     }
 
-    public function setupGame() : void
+    public function setupGame(): void
     {
-        $this->message = "";
-
-        $randomWord = array_rand($this->words,1);
+        $randomWord = array_rand($this->words, 1);
         $this->selectedWord = $this->words[$randomWord];
         $_SESSION['selectedWord'] = serialize($this->selectedWord);
-        var_dump($this->selectedWord);
-
+//        var_dump($this->selectedWord);
+        $this->message = "";
     }
 
-    public function guessIsSubmitted() : void
+    public function guessIsSubmitted(): void
     {
-        echo "test";
-        $this->selectedWord = unserialize($_SESSION['selectedWord'], 1);
-        var_dump($this->selectedWord);
+        $this->selectedWord = unserialize($_SESSION['selectedWord']);
+//        var_dump($this->selectedWord);
 
         $this->message = $this->selectedWord->verify();
+
         echo $this->message;
     }
 }
-
-//        print_r($this->words);
-//        print_r(Data::words());
-//        $randomFrenchWord = array_rand(Data::words());
-//        echo $randomFrenchWord;
-//        $englishTranslation = Data::words()[$randomFrenchWord];
-//        echo $englishTranslation;

@@ -15,7 +15,7 @@ class Data
             'pain' => 'bread',
             'nain de jardin' => 'garden gnome',
             'ouef' => 'egg',
-            'bouisson' => 'bush',
+            'buisson' => 'bush',
             'chapeau' => 'hat',
             'porte' => 'door',
             'musique' => 'music',

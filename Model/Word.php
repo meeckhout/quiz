@@ -1,26 +1,32 @@
 <?php
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
-
-
 class Word
 {
-    public string $french;
-    public string $translation;
 
-    public function __construct(string $french, string $translation)
+    public string $word;
+    public string $answer;
+
+    public function __construct(string $frenchWord, string $englishWord)
     {
-        $this->french = $french;
-        $this->translation = $translation;
+        $this->word = $frenchWord;
+        $this->answer = $englishWord;
     }
 
-    public function verify(): string
+    // TODO: add word (FR) and answer (EN) - (via constructor or not? why?)
+
+    public function verify()
     {
-        if($_POST['guess'] === $this->translation) {
-            return "success";
+        if ($_POST['text'] === $this->answer) {
+//            $_SESSION['result'] = 'true';
+            return 'CORRECT !!';
+        } else {
+            return 'This answer is incorrect. The correct answer was : ' . $this->answer;
         }
-        return "failure";
+
+//        $_SESSION['result'] = 'false';
+
+        // TODO: use this function to verify if the provided answer by the user matches the correct one
+        // Bonus: allow answers with different casing (example: both bread or Bread can be correct answers, even though technically it's a different string)
+        // Bonus (hard): can you allow answers with small typo's (max one character different)?
     }
 }
