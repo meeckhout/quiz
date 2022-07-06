@@ -13,9 +13,11 @@
 </head>
 <body>
     <div class="container">
-<!--        <img class="sparkles" src="https://tenor.com/view/rose-glittery-beautiful-pretty-purple-gif-14336808" alt="tacky sparkles">-->
-        <h1 class="animate__animated animate__backInDown animate__flash ">Language quiz</h1>
-<!--        <img class="sparkles" src="" alt="tacky sparkles">-->
+        <div class="title">
+            <img class="dolphin" src="https://www.picgifs.com/glitter-gifs/d/dolphins/picgifs-dolphins-7902324.gif" alt="tacky sparkly dolphin">
+            <h1 class="animate__animated animate__backInDown animate__flash ">Language quiz</h1>
+            <img class="dolphin alt" src="https://www.picgifs.com/glitter-gifs/d/dolphins/picgifs-dolphins-7902324.gif" alt="tacky sparkly dolphin">
+        </div>
 
         <img class="unicat" src="https://static.wikia.nocookie.net/e32fb36d-b34b-4e27-aebc-45dcd3f74944/scale-to-width/755" alt="unicorn and fat cat running">
             <form method="POST" action="">
@@ -26,7 +28,7 @@
                 </div>
 
                 <h2 class="animate__animated animate__wobble">Let's play!</h2>
-                <img class="balloons" src="https://img1.picmix.com/output/stamp/normal/7/2/6/4/1284627_46d12.gif" alt="glitter balloons">
+<!--                <img class="balloons" src="https://img1.picmix.com/output/stamp/normal/7/2/6/4/1284627_46d12.gif" alt="glitter balloons">-->
                 <p class="translate">Translate the French word into English</p>
 
                 <div class="text-field">
