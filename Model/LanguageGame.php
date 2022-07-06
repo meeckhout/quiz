@@ -31,7 +31,6 @@ class LanguageGame
         if (!empty($_POST['startOver'])) {
             $this->setupGame();
         }
-
     }
 
     public function setupGame(): void
@@ -39,14 +38,12 @@ class LanguageGame
         $randomWord = array_rand($this->words, 1);
         $this->selectedWord = $this->words[$randomWord];
         $_SESSION['selectedWord'] = serialize($this->selectedWord);
-//        var_dump($this->selectedWord);
         $this->message = "";
     }
 
     public function guessIsSubmitted(): void
     {
         $this->selectedWord = unserialize($_SESSION['selectedWord']);
-//        var_dump($this->selectedWord);
 
         $this->message = $this->selectedWord->verify();
 

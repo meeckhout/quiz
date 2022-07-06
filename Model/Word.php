@@ -17,13 +17,10 @@ class Word
     public function verify()
     {
         if ($_POST['text'] === $this->answer) {
-//            $_SESSION['result'] = 'true';
             return 'CORRECT !!';
         } else {
             return 'This answer is incorrect. The correct answer was : ' . $this->answer;
         }
-
-//        $_SESSION['result'] = 'false';
 
         // TODO: use this function to verify if the provided answer by the user matches the correct one
         // Bonus: allow answers with different casing (example: both bread or Bread can be correct answers, even though technically it's a different string)

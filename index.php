@@ -20,19 +20,6 @@ require_once 'model/Word.php';
 // Don't change anything in this file
 // The LanguageGame class will be your starting point
 $game = new LanguageGame();
-//$player = new Player("Mushu", 0);
 $game->run();
-
-//function pre_r(array $array)
-//{
-//    echo '<pre>';
-//    print_r($array);
-//    echo '</pre>';
-//}
-
-//echo 'POST';
-//pre_r($_POST);
-//echo 'SESSION';
-//pre_r($_SESSION);
 
 require 'view/quiz.php';
