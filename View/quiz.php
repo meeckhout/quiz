@@ -13,9 +13,9 @@
 </head>
 <body>
     <div class="container">
-        <img class="sparkles" src="https://tenor.com/8jO0.gif" alt="tacky sparkles">
+<!--        <img class="sparkles" src="https://tenor.com/view/rose-glittery-beautiful-pretty-purple-gif-14336808" alt="tacky sparkles">-->
         <h1 class="animate__animated animate__backInDown animate__flash ">Language quiz</h1>
-        <img class="sparkles" src="" alt="tacky sparkles">
+<!--        <img class="sparkles" src="" alt="tacky sparkles">-->
 
         <img class="unicat" src="https://static.wikia.nocookie.net/e32fb36d-b34b-4e27-aebc-45dcd3f74944/scale-to-width/755" alt="unicorn and fat cat running">
             <form method="POST" action="">
@@ -25,16 +25,21 @@
                     <input type="text" name="name" id="name">
                 </div>
 
-                <h2 class="animate__animated animate__wobble">Let's play</h2>
+                <h2 class="animate__animated animate__wobble">Let's play!</h2>
+                <img class="balloons" src="https://img1.picmix.com/output/stamp/normal/7/2/6/4/1284627_46d12.gif" alt="glitter balloons">
+                <p class="translate">Translate the French word into English</p>
 
                 <div class="text-field">
-                    <label for="text" class="question">Question </label>
+                    <label for="text"></label>
                     <p><?php echo $game->selectedWord->word ?></p>
                     <input id="text" type="text" name="text">
                 </div>
 
-                <button type="submit" name="submit" value="go">Submit</button>
-                <button type="submit" name="startOver" value="startOver">Try Again</button>
+<!--                <button type="submit" name="submit" value="go">Submit</button>-->
+<!--                <button type="submit" name="startOver" value="startOver">Try Again</button>-->
+                <button class="button-53" role="button" type="submit" name="submit" value="go">Submit</button>
+                <button class="button-53" role="button" type="submit" name="startOver" value="startOver">Try again</button>
+
             </form>
     </div>
 </body>
