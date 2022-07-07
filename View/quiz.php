@@ -14,9 +14,9 @@
 <body>
     <div class="container">
         <div class="title">
-            <img class="dolphin" src="https://www.picgifs.com/glitter-gifs/d/dolphins/picgifs-dolphins-7902324.gif" alt="tacky sparkly dolphin">
+            <img class="sparkle" src="https://www.picgifs.com/glitter-gifs/b/bananas/picgifs-bananas-101478.gif" alt="tacky sparkly dolphin">
             <h1 class="animate__animated animate__backInDown animate__flash ">Language quiz</h1>
-            <img class="dolphin alt" src="https://www.picgifs.com/glitter-gifs/d/dolphins/picgifs-dolphins-7902324.gif" alt="tacky sparkly dolphin">
+            <img class="sparkle alt" src="https://www.picgifs.com/glitter-gifs/b/bananas/picgifs-bananas-101478.gif" alt="tacky sparkly dolphin">
         </div>
 
         <img class="unicat" src="https://static.wikia.nocookie.net/e32fb36d-b34b-4e27-aebc-45dcd3f74944/scale-to-width/755" alt="unicorn and fat cat running">
@@ -28,7 +28,7 @@
                 </div>
 
                 <h2 class="animate__animated animate__wobble">Let's play!</h2>
-<!--                <img class="balloons" src="https://img1.picmix.com/output/stamp/normal/7/2/6/4/1284627_46d12.gif" alt="glitter balloons">-->
+<!--                <img class="care-bear" src="https://www.picgifs.com/glitter-gifs/b/bananas/picgifs-bananas-101478.gif" alt="">-->
                 <p class="translate">Translate the French word into English</p>
 
                 <div class="text-field">
@@ -37,10 +37,10 @@
                     <input id="text" type="text" name="text">
                 </div>
 
-<!--                <button type="submit" name="submit" value="go">Submit</button>-->
-<!--                <button type="submit" name="startOver" value="startOver">Try Again</button>-->
-                <button class="button-53" role="button" type="submit" name="submit" value="go">Submit</button>
-                <button class="button-53" role="button" type="submit" name="startOver" value="startOver">Try again</button>
+                <div class="buttons">
+                    <button class="button-53" role="button" type="submit" name="submit" value="go">Submit</button>
+                    <button class="button-53" role="button" type="submit" name="startOver" value="startOver">Try again</button>
+                </div>
 
             </form>
     </div>
