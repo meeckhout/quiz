@@ -9,6 +9,12 @@ body {
   background-color: hotpink;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   color: yellow;
 }
@@ -38,6 +44,10 @@ p {
   display: flex;
 }
 
+.welcome {
+  height: 5rem;
+}
+
 .unicat {
   position: absolute;
   height: 8rem;
@@ -65,6 +75,17 @@ img.sparkle.alt {
   color: white;
 }
 
+.flags {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.flag {
+  height: 6rem;
+  width: 9rem;
+}
+
 .button-53 {
   background-color: #3DD1E7;
   border: 0 solid #E5E7EB;
@@ -83,7 +104,7 @@ img.sparkle.alt {
   text-decoration: none #000000 solid;
   text-decoration-thickness: auto;
   width: 100%;
-  max-width: 360px;
+  max-width: 460px;
   position: relative;
   cursor: pointer;
   transform: rotate(-2deg);
@@ -122,6 +143,30 @@ img.sparkle.alt {
   .button-53 {
     padding: 0.75rem 3rem;
     font-size: 1.25rem;
+  }
+}
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+  font-size: 60px;
+}
+
+.waviy span {
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes waviy {
+  0%, 40%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-20px);
   }
 }
 

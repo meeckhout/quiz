@@ -15,7 +15,7 @@ class LanguageGame
             $this->words[] = new Word($frenchTranslation, $englishTranslation);
             // TODO: create instances of the Word class to be added to the words array
         }
-        $this->selectedWord = new Word("", "");
+//        $this->selectedWord = new Word("", "");
     }
 
     public function run(): void
