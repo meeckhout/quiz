@@ -21,17 +21,12 @@
             <h1 class="animate__animated animate__backInDown animate__flash ">Language quiz</h1>
             <img class="sparkle alt" src="https://www.picgifs.com/glitter-gifs/b/bananas/picgifs-bananas-101478.gif" alt="tacky sparkly cat in banana">
         </div>
-
-        <img class="unicat" src="https://static.wikia.nocookie.net/e32fb36d-b34b-4e27-aebc-45dcd3f74944/scale-to-width/755" alt="unicorn and fat cat running">
-
             <form method="POST" action="">
 
-                <div class="player-row">
-                    <label for="name">Player Name: </label>
-                    <input type="text" name="name" id="name">
+                <div class="sides">
+                    <img class="a" src="https://www.picgifs.com/glitter-gifs/b/britney-spears/picgifs-britney-spears-8381117.gif" alt="britney spears">
+                    <img class="b" src="https://www.picgifs.com/glitter-gifs/c/christina-aguilera/picgifs-christina-aguilera-8914531.gif" alt="christina aguilera">
                 </div>
-
-<!--                <h2 class="animate__animated animate__wobble">Let's play!</h2>-->
 
                 <div class="waviy">
                     <span style="--i:1">L</span>
@@ -44,7 +39,6 @@
                     <span style="--i:8">L</span>
                     <span style="--i:9">A</span>
                     <span style="--i:10">Y</span>
-
                 </div>
 
                 <div class="flags">
@@ -53,18 +47,21 @@
                     <img class="flag british" src="https://www.picgifs.com/glitter-gifs/f/flags/picgifs-flags-7561188.gif" alt="british flag">
                 </div>
 
+                <img class="avril" src="https://www.picgifs.com/glitter-gifs/a/avril-lavigne/picgifs-avril-lavigne-706130.gif" alt="avril lavigne forever">
+
                 <div class="text-field">
                     <label for="text"></label>
-                    <p><?php echo $game->selectedWord->word ?></p>
+                    <p class="french-word"><?php echo $game->selectedWord->word ?></p>
                     <input id="text" type="text" name="text">
+<!--                    <img src="https://www.picgifs.com/glitter-gifs/a/arrows/picgifs-arrows-911674.gif">-->
                 </div>
 
                 <div class="buttons">
                     <button class="button-53" role="button" type="submit" name="submit" value="go">Submit</button>
                     <button class="button-53" role="button" type="submit" name="startOver" value="startOver">Try again</button>
                 </div>
-
             </form>
+        <img class="unicat" src="https://static.wikia.nocookie.net/e32fb36d-b34b-4e27-aebc-45dcd3f74944/scale-to-width/755" alt="unicorn and fat cat running">
     </div>
 </body>
 </html>
