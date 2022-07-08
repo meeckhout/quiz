@@ -50,10 +50,9 @@
                 <img class="avril" src="https://www.picgifs.com/glitter-gifs/a/avril-lavigne/picgifs-avril-lavigne-706130.gif" alt="avril lavigne forever">
 
                 <div class="text-field">
-                    <label for="text"></label>
+                    <label class="message" for="text"></label>
                     <p class="french-word"><?php echo $game->selectedWord->word ?></p>
                     <input id="text" type="text" name="text">
-<!--                    <img src="https://www.picgifs.com/glitter-gifs/a/arrows/picgifs-arrows-911674.gif">-->
                 </div>
 
                 <div class="buttons">
